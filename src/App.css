@@ -1,0 +1,105 @@
+/* App.css */
+.App {
+  text-align: center;
+}
+
+body {
+  background: #eef4fb;
+  margin: 0;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 65px;
+  color: #007ae6;
+}
+
+button {
+  cursor: pointer;
+}
+
+.grey-card-contianer {
+  max-width: 725px;
+  margin: auto;
+  background: #f6f6f6;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  padding: 40px 50px 30px;
+}
+
+.view-button {
+  border-radius: 5px;
+  background: #fff;
+  color: #007ae6;
+  border: none;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  padding: 15px 30px;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.active-button {
+  background: #fcba02;
+  color: #fff;
+}
+
+.view-selection-div {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+/* Ensure the content doesn't hide behind the fixed header */
+.content {
+  padding: 20px;
+  margin-top: 80px; /* This space should match the height of the fixed header */
+}
+
+/* Consultation Button */
+.consultation-button {
+  background-color: #007ae6; /* Primary button color */
+  color: white; /* Text color */
+  font-size: 16px; /* Font size */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 20px; /* Space above the button */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for desktop */
+.consultation-button:hover {
+  background-color: #005bb5; /* Darker blue on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .consultation-button {
+    width: 100%; /* Full-width button on smaller screens */
+    text-align: center;
+  }
+}
+
+.google-form-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.google-form-container iframe {
+  width: 100%;
+  max-width: 640px;
+  height: 1030px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}

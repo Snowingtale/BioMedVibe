@@ -1,0 +1,113 @@
+/* Header.css */
+.header {
+    background-color: #007ae6; /* Medical blue */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+  }
+  
+  .header .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: rgb(255, 0, 0);
+    font-family: fantasy;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile menu button */
+  .menu-btn {
+    display: none; /* Hidden by default */
+    background: #007ae6;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Mobile view: Show the menu button only on small screens */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide the nav links on small screens */
+      width: 100%;
+      flex-direction: column;
+      background-color: #007ae6;
+      position: absolute;
+      top: 60px; /* Below the header */
+      left: 0;
+      padding: 10px 0;
+    }
+  
+    .nav-links.active {
+      display: flex; /* Show the nav links when 'active' class is added */
+    }
+  
+    .menu-btn {
+      display: block; /* Show the menu button on small screens */
+      position: absolute;
+      top: 50%;
+      right: 70px;
+      transform: translateY(-50%);
+    }
+  
+    .menu-title {
+      display: flex; /* Hide the "Menu" title on small screens */
+    }
+  }
+  
+  /* Desktop view */
+  @media (min-width: 769px) {
+    .nav-links {
+      display: flex;
+      justify-content: flex-end; /* Align the navigation links to the right */
+    }
+  
+    .menu-btn {
+      display: none; /* Hide the menu button on desktop */
+    }
+  
+    .menu-title {
+      display: inline-block; /* Display the "Menu" title */
+      margin-left: 20px; /* Space between the buttons and the title */
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+  
+  /* Add some space below the header */
+  body {
+    margin-top: 60px; /* Adjust based on header height */
+  }
+  
+  .content {
+    padding: 20px;
+    margin-top: 80px; /* Adjust to ensure content is not hidden behind the fixed header */
+  }
+  
